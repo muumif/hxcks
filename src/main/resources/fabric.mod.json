@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "hxcks",
+  "version": "${version}",
+
+  "name": "Custom client",
+  "description": "A custom client for learning java and for the LiveOverflow server!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/hxcks/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "client.Client"
+    ]
+  },
+  "mixins": [
+    "client.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
